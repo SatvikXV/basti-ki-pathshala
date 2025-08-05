@@ -1,9 +1,9 @@
-// src/components/Navbar.jsx
+
 
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 
-// SVG for Hamburger Menu Icon
+
 const HamburgerIcon = ({ isOpen }) => (
   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path className={`transition-transform duration-300 ease-in-out`} strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"} />
@@ -14,9 +14,9 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const closeMenu = () => setIsOpen(false);
 
-  // Style for the active navigation link
+  
   const activeStyle = {
-    borderBottom: '2px solid #FBBF24', // Tailwind's yellow-400 color
+    borderBottom: '2px solid #FBBF24', 
     color: '#FBBF24',
     paddingBottom: '4px',
   };
@@ -26,9 +26,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
 
-          {/* Logo Section */}
+          
           <Link to="/" onClick={closeMenu} className="flex items-center space-x-3">
-            {/* Sun Icon SVG */}
+           
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -43,7 +43,7 @@ export default function Navbar() {
             </span>
           </Link>
 
-          {/* Desktop Menu */}
+          
           <div className="hidden md:block">
             <ul className="flex items-center space-x-10 text-lg font-medium text-gray-200">
               <li>
@@ -64,7 +64,7 @@ export default function Navbar() {
             </ul>
           </div>
 
-          {/* Mobile Menu Button */}
+          
           <div className="md:hidden">
             <button onClick={() => setIsOpen(!isOpen)} className="text-white focus:outline-none">
               <HamburgerIcon isOpen={isOpen} />
@@ -74,7 +74,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu Content */}
+     
       <div className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out bg-slate-900 ${isOpen ? "max-h-96" : "max-h-0"}`}>
         <ul className="flex flex-col items-center space-y-6 px-4 pt-4 pb-8 text-lg font-medium text-gray-200">
           <li>

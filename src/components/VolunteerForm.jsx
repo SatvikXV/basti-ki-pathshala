@@ -1,4 +1,4 @@
-// VolunteerForm.jsx
+
 export default function VolunteerForm() {
   return (
     <div className="max-w-2xl mx-auto p-6 md:p-8 my-12">
@@ -35,7 +35,7 @@ export default function VolunteerForm() {
             />
           </div>
           <div className="text-center pt-2">
-            {/* Use the primary theme color for the button */}
+            
             <button className="bg-yellow-400 text-black px-8 py-3 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-lg">
               Submit Application
             </button>

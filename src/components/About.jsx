@@ -1,9 +1,8 @@
-// components/About.jsx
+
 
 export default function About() {
   return (
     <div className="bg-white">
-      {/* Hero Section */}
       <section className="py-20 md:py-24 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
@@ -14,11 +13,8 @@ export default function About() {
           </p>
         </div>
       </section>
-
-      {/* Mission and Vision Section */}
       <section id="about" className="py-16 px-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          {/* Our Mission */}
           <div className="p-8 bg-yellow-50 rounded-lg">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Mission</h2>
             <p className="text-gray-700 text-lg leading-relaxed">
@@ -26,7 +22,6 @@ export default function About() {
             </p>
           </div>
 
-          {/* Our Vision */}
           <div className="p-8 bg-blue-50 rounded-lg">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Vision</h2>
             <p className="text-gray-700 text-lg leading-relaxed">
@@ -35,8 +30,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
-       {/* Our Approach Section */}
        <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Approach</h2>

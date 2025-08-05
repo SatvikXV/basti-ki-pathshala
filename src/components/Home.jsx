@@ -1,5 +1,5 @@
-// Home.jsx
-import { Link } from 'react-router-dom'; // Import Link
+
+import { Link } from 'react-router-dom'; 
 import heroBg from '../assets/hero.jpg';
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
         <p className="text-xl md:text-2xl max-w-2xl mx-auto mb-8" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.7)' }}>
           Join us in our mission to empower underprivileged children through education.
         </p>
-        {/* Use Link component and themed button style */}
+        
         <Link
           to="/volunteer"
           className="bg-yellow-400 text-black px-8 py-3 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-xl"
